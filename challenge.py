@@ -46,16 +46,16 @@ if __name__ == '__main__':
         def setUp(self):
             # Initialize the needed values for the tests
             self.parameters = {
-                'side' = 5
-                'base' = 5
-                'height' = 2
-                'diagonal_1' = 10 
-                'diagonal_2' = 4
-                'base_minor' = 2
-                'base_major' = 6
-                'perimeter' = 20
-                'apothem' = 6
-                'radius' = 6
+                'side': 5,
+                'base': 5,
+                'height': 2,
+                'diagonal_1': 10, 
+                'diagonal_2': 4,
+                'base_minor': 2,
+                'base_major': 6,
+                'perimeter': 20,
+                'apothem': 6,
+                'radius': 6
                 }
 
             
@@ -95,7 +95,7 @@ if __name__ == '__main__':
 
         def tearDown(self):
         # Delete the needed values for the tests
-        del(self.parameters)
+            del(self.parameters)
 
 
     unittest.main()
