@@ -34,8 +34,7 @@ def regular_polygon_area(perimeter, apothem):
 
 def circumference_area(radius):
     """Returns the area of a circumference"""
-    return round(math.pi*(radius**2), 4)
-
+    return math.pi*(radius**2)
 
 
 if __name__ == '__main__':
@@ -55,7 +54,7 @@ if __name__ == '__main__':
                 'base_major': 6,
                 'perimeter': 20,
                 'apothem': 6,
-                'radius': 6
+                'radius': 1.9544100476116797
                 }
 
             
@@ -91,7 +90,7 @@ if __name__ == '__main__':
 
         def test_circumference_area(self):
             circumference_answer = circumference_area(self.parameters['radius'])
-            self.assertEqual(circumference_answer, 113.0973)
+            self.assertEqual(circumference_answer, 12)
 
         def tearDown(self):
         # Delete the needed values for the tests
